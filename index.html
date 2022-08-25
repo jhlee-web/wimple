@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8">
-    <?php
-        include $_SERVER["DOCUMENT_ROOT"]."/include/head.php"
-    ?>
+    <script src="./js/loadHTML.js"></script>
+    <script>
+        loadHTML("./include/head.html");
+    </script>
     <link rel="stylesheet" href="/css/main.css?v=<?php echo time()?>">
     <title>Recycle</title>
 </head>
 <body>
-    <?php
-        include $_SERVER["DOCUMENT_ROOT"]."/include/header.php"
-    ?>
+    <script>
+        loadHTML("./include/header.html");
+    </script>
     <script>
         $(function(){
             changeHeader()
@@ -84,9 +84,9 @@
         </div>
         
     </main>
-    <?php
-        include $_SERVER["DOCUMENT_ROOT"]."/include/footer.php"
-    ?>
+    <script>
+        loadHTML("./include/footer.html");
+    </script>
 
     <script>
         const swiper = new Swiper('.swiper', {
