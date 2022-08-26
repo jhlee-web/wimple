@@ -29,21 +29,22 @@
             </div> -->
         </div>
         <!-- //sub_header -->
-        <!-- 대용량 디자인 / 코딩 완료 후 주석을 풀어주세요 -->
+        <!-- 대용량 페이지 코딩 완료 후 주석을 풀어주세요 -->
         <section id="section-summary"
         data-aos="fade-up"
-        data-background-image="https://kksuin.github.io/img/solution/wimple_main.jpg"
         class="lozad">
-            <div class="container">
-                <div class="switch-table__title--mobile title-wrap ">
-                    <p class="text-rg">인공지능 기술을 활용한 스마트 재활용품 분리수거함</p>
-                    <h2 class="headline-1">Wimple Bin</h2>
+            <div class="absolute__img-wrap">
+                <img class="absolute__img">
+            </div>
+            <div class="absolute__text-container container">
+                <div class="absolute__text-wrap">
+                    <div class="switch-table__title--mobile title-wrap ">
+                        <p class="text-rg">인공지능 기술을 활용한 스마트 재활용품 분리수거함</p>
+                        <h2 class="headline-1">Wimple Bin</h2>
+                    </div>
                 </div>
                 <div 
                 class="switch-table reverse">
-                    <div class="grid switch-table__img-wrap">
-                        <!-- <img class=" img--small" data-src="https://kksuin.github.io/video/solution_spec.png"> -->
-                    </div>
                     <div class="switch-table__text-wrap">
                         <div class="switch-table__title--pc title-wrap">
                             <p class="text-rg">인공지능 기술을 활용한 스마트 재활용품 분리수거함</p>
@@ -128,7 +129,7 @@
         data-aos="fade-up"
         class="">
             <div class="container">
-                <h2 class="headline-2">
+                <h2 class=" sub-title-wrap headline-2">
                     인공지능과<br>
                     재활용 분리수거의 만남
                 </h2>
@@ -158,12 +159,15 @@
                             <div
                             class="skill__img-wrap "
                             data-name="auto">
-                                <video
-                                class="lozad"
-                                playsinline autoplay muted loop>
-                                    <source data-src="https://kksuin.github.io/video/solution_plastic.mp4"
-                                    type="video/webm">
-                                </video>
+                                <div class="swiper"
+                                id="wimple__auto-swiper">
+                                    <div class="swiper-wrapper">
+                                        <img class="swiper-slide" src="/img/solution/wimple_auto_1.jpg">
+                                        <img class="swiper-slide" src="/img/solution/wimple_auto_2.jpg">
+                                        <img class="swiper-slide" src="/img/solution/wimple_auto_3.jpg">
+                                        <img class="swiper-slide" src="/img/solution/wimple_auto_4.jpg">
+                                    </div>
+                                </div>
                             </div>
                             <div class="skill__desc-wrap">
                                 <h4 class="headline-3">자동 분리수거</h4>
@@ -199,7 +203,7 @@
         data-aos="fade-up"
         class="">
             <div class="container">
-                <h2 class="headline-2">
+                <h2 class="sub-title-wrap headline-2">
                     언제 어디서나<br>
                     모바일로 간편 조작
                 </h2>
@@ -239,7 +243,7 @@
         data-aos="fade-up"
         class="">
             <div class="container">
-                <h2 class="headline-2">상세스펙</h2>
+                <h2 class=" sub-title-wrap headline-2">상세스펙</h2>
                 <div
                 data-aos="fade-up"
                 class="switch-table reverse">
@@ -297,6 +301,14 @@
             enableAutoReload: true
         });
         observer.observe();
+
+        const swiper = new Swiper('#wimple__auto-swiper', {
+            slidesPerView: 1,
+            direction: 'horizontal',
+            autoplay: {
+                delay: 3000,
+            },
+        });
     </script>
 
 </body>

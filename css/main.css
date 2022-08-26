@@ -45,16 +45,16 @@
     }
 }
 #section-wimple{
-    background-image: var(--background-dark),url(https://kksuin.github.io/img/main_wimple_m.jpg);
+    background-image: var(--background-dark),url(/img/main/wimple_bin.jpg);
     text-align: left;
 }
 
 #section-sdgs{
-    background-image: var(--background-dark),url(https://kksuin.github.io/img/main_background_m.jpg);
+    background-image: var(--background-dark),url(/img/main/sdgs.jpg);
     text-align: center;
 }
 #section-gpgp{
-    background-image: var(--background-dark),url(https://kksuin.github.io/img/main02.jpg);
+    /* background-image: var(--background-dark),url(/img/main/gpgp.jpg); */
     text-align: center;
     height: 100vh;
 }

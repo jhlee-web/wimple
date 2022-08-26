@@ -26,7 +26,7 @@
             <div class="swiper-wrapper">
                 <section id="section-wimple" class="swiper-slide swiper-lazy">
                         <video playsinline autoplay muted loop>
-                            <source src="https://kksuin.github.io/video/main_wimple.mp4" midia="(min-width:481px)"
+                            <source src="/img/main/wimple_bin.mp4" midia="(min-width:481px)"
                             type="video/mp4">
                         </video>
                         <div class="container full-page-text">
@@ -45,7 +45,9 @@
                             <i class="uit uit-angle-double-down"></i>
                         </span>
                     </section>
-                    <section id="section-gpgp" class="swiper-slide swiper-lazy">
+                    <section id="section-gpgp"
+                    data-background-image="/img/main/gpgp.jpg"
+                    class="swiper-slide swiper-lazy lozad">
                     <div class="container full-page-text">
                         <h2 class="headline-1">쓰레기로 만들어진 국가 GPGP<span class="text-xs">Great Pacific Garbage Patch</span></h2>
                         <p class="">
@@ -62,7 +64,7 @@
                 </section>
                 <section id="section-sdgs" class="swiper-slide swiper-lazy">
                     <video playsinline autoplay muted loop>
-                        <source src="https://kksuin.github.io/video/main_background.mp4" midia="(min-width:481px)"
+                        <source src="/img/main/sdgs.mp4" midia="(min-width:481px)"
                         type="video/mp4">
                     </video>
                     <div class="container full-page-text">
@@ -97,9 +99,10 @@
             mousewheel: true,
             debugger: true,
         });
-
+        const observer = lozad('.lozad',{
+            enableAutoReload: true
+        });
     </script>
         
-    <script src="/js/header.js"></script>
 </body>
 </html>
