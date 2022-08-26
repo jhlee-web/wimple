@@ -381,13 +381,10 @@
     margin-bottom: 1rem;
 }
 .skill__img-wrap[data-name="wee"]{
-    background-image: url(../img/solution/top.jpg);
-}
-.skill__img-wrap[data-name="auto"]{
-    background-image: url(http://source.unsplash.com/random/2);
-
+    background-image: url(/img/solution/top.jpg);
 }
 .skill__img-wrap[data-name="motion"]{
+    aspect-ratio: auto;
     background-image: url(/img/solution/wimple_motion.jpg);
 }
 .skill__desc-wrap{
