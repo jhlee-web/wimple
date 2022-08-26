@@ -184,11 +184,13 @@
     left: 0;
     top: 0;
 }
-@supports (aspect-ratio){
+
+@supports (aspect-ratio: 2/ 1){
     .history__img{
         aspect-ratio: 2 / 1;
     }
 }
+
 .history__list{
     position: relative;
     padding: 0;
@@ -249,10 +251,6 @@
         justify-content: end;
     }
 }
-@media all and (min-width:481px) and (max-width:1199px){
-
-}
-
 /* about-사업실적 */
 .performance__list{
     text-align: center;
@@ -386,20 +384,29 @@
 .skill__img-wrap video{
     display: none
 }
-.skill__img-wrap{
+.bg-img-wrap--square{
+    position: relative;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    padding-bottom: 0;
+    height: calc(100vw - 2rem);
+    overflow:hidden;
 
-    margin-bottom: 1rem;
+    background-position: center center;
+    background-size: cover;
 }
-.skill__img-wrap[data-name="wee"]{
+@supports (aspect-ratio : 1 / 1){
+    .bg-img--wrap--square{
+        aspect-ratio: 1 / 1;
+    }
+}
+.bg-img-wrap--square[data-name="wee"]{
     background-image: url(/img/solution/top.jpg);
 }
-.skill__img-wrap[data-name="motion"]{
+.bg-img-wrap--square[data-name="auto"]{
     aspect-ratio: auto;
+    height: auto;
+}
+.bg-img-wrap--square[data-name="motion"]{
     background-image: url(/img/solution/wimple_motion.jpg);
 }
 .skill__desc-wrap{
@@ -489,6 +496,7 @@
 .absolute__img{
     position: absolute;
 }
+
 #section-summary .absolute__img{
     background-image: url(/img/solution/wimple_main.jpg);
     background-position-x: 78%;
@@ -634,43 +642,6 @@
 }
 
 /* solution - spec */
-.spec__wrapper{
-    display: flex;
-    flex-direction: column;
-}
-.spec__img-wrap{
-    width: 100%;
-    padding: 1rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.spec__list{
-    padding: 1rem;
-    border-bottom: 1px solid var(--line-color);
-}
-.spec__list:last-child{
-    border-bottom: none;
-}
-.spec__list .text-remark{
-    width: 4.5rem;
-    flex-shrink: 0;
-    flex-basis: 4.5rem;
-    display: inline-block;
-}
-
-@media all and (min-width:481px){
- .spec__wrapper{
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 2rem;
- }   
- .spec__list-wrap{
-    width: 100%;
- }
- .spec__img-wrap{
-    max-width: 100%
- }
- .spec__img{
-    max-width: 18vw;
- }
+#section-spec .switch-table__img-wrap{
+    height: 100%;
 }

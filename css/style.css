@@ -436,11 +436,18 @@ html,body{
 
 
 /* video */
+@media all and (min-width:481px){
+    video{
+        width: 100vw;
+        height: 100vh;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+}
+
 video{
-    width: 100vw;
-    height: 100vh;
-    aspect-ratio: 16 / 9;
     object-fit: cover;
+    display: none;
 }
 
 /* img */
