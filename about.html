@@ -214,28 +214,28 @@
                         <li class="performance__list">
                             <div class="performance__img-wrap">
                                 <img class="swiper-lazy lozad"
-                                data-src="/img/performance/ai_online.jpg">
+                                data-src="/img/about/performance/ai_online.jpg">
                             </div>
                             <p>인공지능 온라인 경진대회</p>
                         </li>
                         <li class="performance__list">
                             <div class="performance__img-wrap">
                                 <img class="swiper-lazy lozad"
-                                data-src="/img/performance/biz_project.jpg">
+                                data-src="/img/about/performance/biz_project.jpg">
                             </div>
                             <p>biz project 은상</p>
                         </li>
                         <li class="performance__list">
                             <div class="performance__img-wrap">
                                 <img class="swiper-lazy lozad"
-                                data-src="/img/performance/grand_challenge.jpg">
+                                data-src="/img/about/performance/grand_challenge.jpg">
                             </div>
                             <p>그랜드 첼린지</p>
                         </li>
                         <li class="performance__list">
                             <div class="performance__img-wrap">
                                 <img class="swiper-lazy lozad"
-                                data-src="/img/performance/venture.jpg">
+                                data-src="/img/about/performance/venture.jpg">
                             </div>
                             <p>벤처기업확인서</p>
                         </li>
@@ -442,7 +442,7 @@
                     }
                     html=`<li class="">
                         <div class="grid__img-wrap">
-                            <img class="" src="/img/partners/${i}.png">
+                            <img class="lozad" src="/img/about/partners/${i}.png">
                         </div>
                     </li>`
                     $('#partners-list').append(html);
@@ -460,14 +460,12 @@
     <script>
         loadHTML("./include/footer.html");
     </script>
-    <script src="/js/header_sub_page.js"></script>
 
     <script>
         AOS.init();
         // scorllTop 버튼 이벤트
         $('#btn-top').on('click',function(){
             let section = $('main').find('section').first().offset().top - 80
-            console.log(section)
             $('body,html').animate({
                 scrollTop:section
             },1000)

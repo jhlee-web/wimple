@@ -30,7 +30,7 @@
 }
 /* 반드시 페이지 클래스를 추가해주세요  */
 .sub-header__bg.about{
-    background: var(--background-dark),url(../img/about/container.jpg) center center / cover;
+    background: var(--background-dark),url(../img/about/sub_header.jpg) center center / cover;
 }
 .sub-header__bg.solution{
     background: var(--background-dark),url(../img/solution/solution_sub_header.jpg) center center / cover;
