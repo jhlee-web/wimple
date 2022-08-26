@@ -1,6 +1,10 @@
 $(function(){
     getScrollTop()
     createScrollTop()
+    alert(`
+        width: ${$(window).width()}
+        height: ${$(window).height()}
+    `)
 })
 
 let headerHeight = $('.header').height();
