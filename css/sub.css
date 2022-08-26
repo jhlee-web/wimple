@@ -386,11 +386,18 @@
 .skill__img-wrap video{
     display: none
 }
+.bg-img-wrap{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
 .bg-img-wrap--square{
     position: relative;
     width: 100%;
-    padding-bottom: 0;
-    height: calc(100vw - 2rem);
+    padding-bottom: 50%;
+    height: 0;
     overflow:hidden;
 
     background-position: center center;
@@ -420,9 +427,6 @@
     margin-bottom: 1rem;
 }
 
-@media all and (min-width:481px){
-    
-}
 
 
 /* switch-table*/
