@@ -186,7 +186,9 @@
 }
 
 @supports (aspect-ratio: 2/ 1){
-    .history__img{
+    .history__img-wrap{
+        height: auto;
+        padding-bottom: 0;
         aspect-ratio: 2 / 1;
     }
 }
@@ -396,6 +398,8 @@
 }
 @supports (aspect-ratio : 1 / 1){
     .bg-img--wrap--square{
+        height: auto;
+        padding-bottom: 0;
         aspect-ratio: 1 / 1;
     }
 }
