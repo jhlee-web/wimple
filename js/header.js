@@ -1,10 +1,15 @@
 $(function(){
     getScrollTop()
     createScrollTop()
-    alert(`
-        width: ${$(window).width()}
-        height: ${$(window).height()}
-    `)
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        alert('mobile')
+        if($(window).width() > 480){
+            alert(`
+                width: ${$(window).width()}
+                height: ${$(window).height()}
+            `)
+        }
+    }
 })
 
 let headerHeight = $('.header').height();
