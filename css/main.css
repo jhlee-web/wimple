@@ -93,6 +93,7 @@
 #main [id*="section-"] .full-page-text{
     position: absolute;
     top: 50%; left: 50%; transform: translate(-50%, -50%);
+    padding-top: var(--header-height);
     z-index: 10;
     color: var(--background-color);
     display: flex;
@@ -105,4 +106,6 @@
 #section-wimple .full-page-text{
     align-items: flex-start!important;
     top: 33.33%!important;
+    left: 8vw!important;
+    transform: translateY(-50%)!important;
 }

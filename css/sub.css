@@ -8,6 +8,9 @@
     margin-bottom: var(--distance-default);
 }
 
+.headline-wrap{
+    margin-bottom: var(--distance-default);
+}
 .headline-wrap .text-rg{
     color: var(--text-sub-color);
 }
