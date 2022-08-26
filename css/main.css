@@ -54,7 +54,7 @@
     text-align: center;
 }
 #section-gpgp{
-    /* background-image: var(--background-dark),url(/img/main/gpgp.jpg); */
+    background-image: var(--background-dark),url(/img/main/gpgp.jpg);
     text-align: center;
     height: 100vh;
 }
