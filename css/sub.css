@@ -171,14 +171,22 @@
 .history__year-wrap .headline-3{
     padding: 14px 0;
 }
-.history__img{
+.history__img-wrap{
+    position: relative;
+    height: 0;
     width: 100%;
-    aspect-ratio: 2 / 1;
+    padding-bottom:50%;
     overflow: hidden;
 }
-@supports not (aspect-ratio: 2 / 1){
+.history__img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+@supports (aspect-ratio){
     .history__img{
-        padding-bottom:50%
+        aspect-ratio: 2 / 1;
     }
 }
 .history__list{
