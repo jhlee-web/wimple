@@ -421,30 +421,7 @@
 }
 
 @media all and (min-width:481px){
-    .skill__list{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 2rem;
-    }
-    .skill__list[data-aos="fade-left"]{
-        flex-direction: row-reverse;
-    }
-    .skill__img-wrap{
-        display: grid;
-        place-items: center;
-        background-image: none!important;
-        margin: 0 auto;
-        aspect-ratio: unset;
-    }
-    .skill__img-wrap video{
-        max-width: 640px;
-        max-height: 360px;
-        aspect-ratio: 16 / 9;
-
-        display: block;
-        /* object-fit: unset; */
-    }
+    
 }
 
 
