@@ -642,6 +642,6 @@
 }
 
 /* solution - spec */
-#section-spec .switch-table__img-wrap{
-    height: 100%;
+#section-spec .switch-table__img{
+    height: unset;
 }
