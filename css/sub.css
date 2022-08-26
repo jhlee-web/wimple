@@ -172,10 +172,14 @@
     padding: 14px 0;
 }
 .history__img{
-    /* padding-left: 1rem; */
     width: 100%;
     aspect-ratio: 2 / 1;
     overflow: hidden;
+}
+@supports not (aspect-ratio: 2 / 1){
+    .history__img{
+        padding-bottom:50%
+    }
 }
 .history__list{
     position: relative;

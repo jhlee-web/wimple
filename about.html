@@ -99,7 +99,7 @@
                             <li class="history__img">
                                 <img
                                 class="lozad"
-                                data-src="https://source.unsplash.com/random/1?it">
+                                data-src="https://source.unsplash.com/random/1">
                             </li>
                             <li class="history__list">
                             <ul> 
@@ -125,7 +125,7 @@
                             <li class="history__img">
                                 <img
                                 class="lozad"
-                                data-src="https://source.unsplash.com/random/2?it">
+                                data-src="https://source.unsplash.com/random/2">
                             </li>
                             <li class="history__list">
                             <ul> 
@@ -155,7 +155,7 @@
                             <li class="history__img">
                                 <img
                                 class="lozad"
-                                data-src="https://source.unsplash.com/random/3?it">
+                                data-src="https://source.unsplash.com/random/3">
                             </li>
                             <li class="history__list">
                             <ul> 
@@ -178,7 +178,7 @@
                             <li class="history__img">
                                 <img
                                 class="lozad"
-                                data-src="https://source.unsplash.com/random/4?it">
+                                data-src="https://source.unsplash.com/random/4">
                             </li>
                             <li class="history__list">
                             <ul> 
@@ -230,7 +230,7 @@
                                 <img class="swiper-lazy lozad"
                                 data-src="/img/about/performance/grand_challenge.jpg">
                             </div>
-                            <p>그랜드 첼린지</p>
+                            <p>인공지능 그랜드 챌린지</p>
                         </li>
                         <li class="performance__list">
                             <div class="performance__img-wrap">
@@ -252,7 +252,6 @@
                         $('#performance-wrap').addClass('swiper')
                         $('.performance__list-wrap').addClass('swiper-wrapper')
                         $('.performance__list').addClass('swiper-slide')
-                        $('.performance__list').append(`<div class="swiper-lazy-preloader"></div>`)
                         if($('.swiper-pagination').length<1){
                             $('#performance-wrap').append(`<div class="swiper-pagination"></div>`)
                         }
@@ -262,7 +261,6 @@
                         $('#performance-wrap').removeClass('swiper').removeAttr('style')
                         $('.performance__list-wrap').removeClass('swiper-wrapper').removeAttr('style')
                         $('.performance__list').removeClass('swiper-slide').removeAttr('style')
-                        $('.swiper-lazy-preloader').remove()
                         $('.swiper-pagination').remove()
 
                     }

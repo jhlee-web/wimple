@@ -29,7 +29,7 @@ function createScrollTop(){
     }
 }
 
-// 이겆 ㅓㅇ리하고 js 하나없애고싶은데.. .머리가 안돌아간다...
+
 function getScrollTop(){
     let scrollTop = document.documentElement.scrollTop;
     let url = $(location).attr('pathname')
@@ -44,6 +44,7 @@ function getScrollTop(){
 
         // 서브 페이지 배경화면 영역으로 들어간 경우
         if(scrollTop>=headerHeight){
+            console.log('scrollTop>headerHeight')
             $('.header').addClass('scrolled').addClass('white')
 
             let subHeaderBg = $('.sub-header__bg');
@@ -53,7 +54,12 @@ function getScrollTop(){
                 changeHeaderImg(subHeaderBg)
             }
         }
+        else{
+            console.log('else')
+            changeHeaderImg()
+        }
     }
+        
     
 }
 
