@@ -417,8 +417,14 @@
     background-image: url(/img/solution/wimple_motion.jpg);
 }
 .bg-img-wrap--square[data-name="auto"]{
-    padding-bottom: 27.55%;
+    padding-bottom: 56.25%;
 }
+@media all and (min-width:481px){
+    .bg-img-wrap--square[data-name="auto"]{
+        padding-bottom: 27.55%;
+    }
+}
+
 .skill__desc-wrap{
     width: 100%;
 }
