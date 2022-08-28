@@ -45,7 +45,7 @@ function getScrollTop(){
 
         // 서브 페이지 배경화면 영역으로 들어간 경우
         if(scrollTop>=headerHeight){
-            console.log('scrollTop>headerHeight')
+            // console.log('scrollTop>headerHeight')
             $('.header').addClass('scrolled').addClass('white')
 
             let subHeaderBg = $('.sub-header__bg');
@@ -56,7 +56,7 @@ function getScrollTop(){
             }
         }
         else{
-            console.log('else')
+            // console.log('else')
             changeHeaderImg()
         }
     }
