@@ -396,24 +396,15 @@
 .bg-img-wrap--square{
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 100%;
     height: 0;
     overflow:hidden;
 
     background-position: center center;
     background-size: cover;
 }
-@media all and (min-width:481px){
-    .bg-img-wrap--square{
-        padding-bottom: 27.55%;
-    }
-}
-@supports (aspect-ratio : 1 / 1){
-    .bg-img--wrap--square{
-        height: auto;
-        padding-bottom: 0;
-        aspect-ratio: 1 / 1;
-    }
+.bg-img-wrap--square[data-name="auto"]{
+    padding-bottom: 56.25%;
 }
 .bg-img-wrap--square[data-name="wee"]{
     background-image: url(/img/solution/top.jpg);
@@ -422,6 +413,9 @@
     background-image: url(/img/solution/wimple_motion.jpg);
 }
 @media all and (min-width:481px){
+    .bg-img-wrap--square{
+        padding-bottom: 27.55%!important;
+    }
     .bg-img-wrap--square[data-name="wee"]{
         background-image: none;
     }
@@ -431,6 +425,7 @@
     }   
     .bg-img-wrap--square[data-name="motion"]{
         background-image: none;
+        padding-bottom: 56.25%!important;
     }
     .bg-img-wrap--square[data-name="motion"] video{
         width: 100%;
