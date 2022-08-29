@@ -442,6 +442,7 @@ html,body{
         height: 100vh;
         aspect-ratio: 16 / 9;
         object-fit: cover;
+        display: block!important;
     }
 }
 
