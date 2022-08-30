@@ -27,7 +27,12 @@ html,body{
     --background-dark:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     --distance-default:3.5rem
 }
-@media (min-height:920px) and (min-width:481px){
+@media (min-width:481px) and (max-width:768px){
+    :root{
+        --distance-default:5.25rem
+    }
+}
+@media all and (min-width:769px){
     :root{
         --distance-default:7rem
     }

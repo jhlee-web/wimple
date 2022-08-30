@@ -146,6 +146,10 @@
         width: 5.5rem;
         flex-basis: 5.5rem;
     }
+    .about__list--sub .text-remark{
+        width: 3rem;
+        flex-basis: 3rem;
+    }
     .about__list--sub{
         display: flex;
         flex-direction: row;
@@ -551,7 +555,7 @@
     
     .switch-table{
         flex-direction: row;
-        gap: var(--distance-default);
+        gap: 2rem;
         align-items: center;
     }
     .switch-table--depth{
@@ -646,6 +650,7 @@
     height: 0;
     text-align: center;
     padding-bottom: 100%;
+    margin-bottom: var(--distance-default);
 }
 .switch-table__img-wrap.grid img{
     position: absolute;
@@ -653,4 +658,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+}
+@media all and (min-width:481px){
+    .switch-table__img-wrap.grid{
+        padding-bottom: 0%;
+        margin-bottom: 0;
+    }   
 }
